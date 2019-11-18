@@ -34,17 +34,17 @@ const IconWithText = {
 const DeviceSettings = [
   {
     label: "Bed lamp",
-    icon: "",
+    divider: true,
     renderChildren: ""
   },
   {
     label: "Bed lamp",
-    icon: "",
+    divider: "",
     renderChildren: ""
   },
   {
     label: "Bed lamp",
-    icon: "",
+    divider: "",
     renderChildren: ""
   }
 ];
