@@ -1,2 +1,0 @@
-# CodeKraft
-Created with CodeSandbox

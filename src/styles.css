@@ -1,0 +1,79 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.container {
+  flex: 0 0 100%;
+  display: flex;
+}
+.deviceContainer {
+  height: 100%;
+  display: flex;
+  flex-basis: 70%;
+}
+.deviceCardWrapper {
+  display: flex;
+  position: relative;
+  flex-basis: 100%;
+  margin: 50px 40px;
+  height: 130px;
+  width: 303px;
+  flex-direction: row-reverse;
+  box-sizing: border-box;
+}
+.deviceTextContainer {
+  display: flex;
+  align-self: flex-end;
+  flex-direction: column;
+  align-self: flex-end;
+  justify-content: center;
+  width: 203px;
+  height: 120px;
+  background: #fefffe;
+  box-shadow: 0 21px 21px 0 rgba(0, 0, 0, 0.15);
+}
+.deviceImgContainer {
+  display: flex;
+  height: 120px;
+  width: 120px;
+  position: absolute;
+  left: 0;
+  background: lightblue;
+}
+
+.sidePanel {
+  display: flex;
+  flex-basis: 40%;
+  background-image: linear-gradient(
+    -180deg,
+    rgba(173, 107, 255, 0) 0%,
+    rgba(149, 140, 252, 0.3) 25%,
+    #9291fb 38%,
+    rgba(141, 152, 251, 0.85) 84%,
+    rgba(116, 188, 247, 0) 100%
+  );
+  flex-wrap: wrap;
+}
+
+/*Icon With text code*/
+
+.hdrWithIconWrap {
+  display: flex;
+  flex-basis: 100%;
+  justify-content: space-between;
+}
+.iconCls {
+  background: #000000;
+  box-shadow: 0 12px 12px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 60px;
+  height: 24px;
+  width: 42px;
+}
+.iconToggle {
+  background: #ffffff;
+  box-shadow: 0 12px 18px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 60px;
+  height: 14px;
+  width: 14px;
+}
