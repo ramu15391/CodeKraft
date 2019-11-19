@@ -1,0 +1,19 @@
+.deviceSettingName {
+  display: flex;
+  flex-basis: 100%;
+}
+.deviceSettings {
+  display: flex;
+  flex-basis: 100%;
+}
+.deviceSettingSection {
+  display: flex;
+  flex-basis: 100%;
+  flex-direction: column;
+}
+.sideLine {
+  border: 1px solid #ac6cff;
+  color: #ac6cff;
+  height: 1px;
+  width: 100%;
+}

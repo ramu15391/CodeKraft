@@ -1,0 +1,55 @@
+.deviceCardWrapper {
+  display: flex;
+  position: relative;
+  margin: 50px 40px;
+  height: 130px;
+  width: 303px;
+  flex-direction: row-reverse;
+  box-sizing: border-box;
+
+    .deviceTextContainer {
+      display: flex;
+      align-self: flex-end;
+      flex-direction: column;
+      align-self: flex-end;
+      justify-content: center;
+      width: 203px;
+      height: 120px;
+      background: #fefffe;
+      box-shadow: 0 21px 21px 0 rgba(0, 0, 0, 0.15);
+    }
+
+    .deviceImgContainer {
+      display: flex;
+      height: 120px;
+      width: 120px;
+      position: absolute;
+      left: 0;
+      background: lightblue;
+    }
+ }
+
+@media (max-width: 768px) {
+  section.deviceCardWrapper{
+      height: 152px;
+      width: 130px;
+
+      .deviceTextContainer,.deviceImgContainer {
+        width: 120px;
+        height: 120px;
+      }
+  }
+  
+}
+@media (max-width: 480px) {
+  section.deviceCardWrapper{
+      height: 132px;
+      width: 110px;
+
+      .deviceTextContainer,.deviceImgContainer {
+        width: 100px;
+        height: 100px;
+      }
+  }
+  
+}

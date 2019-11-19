@@ -1,3 +1,6 @@
+import { React } from "react";
+import { SelectDeviceShade } from "./components/SelectDeviceShade/SelectDeviceShade";
+
 const DeviceInfo = [
   {
     deviceName: "Bed lamp",
@@ -26,25 +29,33 @@ const DeviceInfo = [
   }
 ];
 
-const IconWithText = {
-  label: "Bed lamp",
-  icon: ""
-};
+const IconWithText = [
+  {
+    label: "Devices",
+    icon: "addDeviceIcon",
+    iconWrap: "addDeviceIconWrap"
+  },
+  {
+    label: "Bed lamp",
+    icon: "toggleIcon",
+    iconWrap: "toggleWrap"
+  }
+];
 
 const DeviceSettings = [
   {
-    label: "Bed lamp",
-    divider: true,
+    label: "Shades",
+    divider: "sideLine",
+    renderChildren: "SelectDeviceShade"
+  },
+  {
+    label: "Mode",
+    divider: "sideLine",
     renderChildren: ""
   },
   {
-    label: "Bed lamp",
-    divider: "",
-    renderChildren: ""
-  },
-  {
-    label: "Bed lamp",
-    divider: "",
+    label: "Intensity",
+    divider: "sideLine",
     renderChildren: ""
   }
 ];

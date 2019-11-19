@@ -2,6 +2,10 @@
   font-family: sans-serif;
   text-align: center;
 }
+h2 {
+  margin: 0;
+  padding: 0;
+}
 
 .container {
   flex: 0 0 100%;
@@ -11,11 +15,13 @@
   height: 100%;
   display: flex;
   flex-basis: 70%;
+  flex-direction: column;
+  padding: 1rem;
+  margin: 1rem;
 }
 .deviceCardWrapper {
   display: flex;
   position: relative;
-  flex-basis: 100%;
   margin: 50px 40px;
   height: 130px;
   width: 303px;
@@ -60,20 +66,40 @@
 
 .hdrWithIconWrap {
   display: flex;
+  margin: 3rem 1rem;
   flex-basis: 100%;
   justify-content: space-between;
 }
-.iconCls {
+.toggleWrap {
   background: #000000;
   box-shadow: 0 12px 12px 0 rgba(0, 0, 0, 0.15);
   border-radius: 60px;
   height: 24px;
   width: 42px;
 }
-.iconToggle {
+.toggleIcon {
   background: #ffffff;
   box-shadow: 0 12px 18px 0 rgba(0, 0, 0, 0.1);
   border-radius: 60px;
   height: 14px;
   width: 14px;
 }
+.addDeviceIcon {
+}
+.addDeviceIconWrap {
+  background-image: linear-gradient(-135deg, #deffc9 0%, #a3f8ff 100%);
+  box-shadow: 0 15px 30px 0 rgba(234, 252, 223, 0.4);
+  height: 56px;
+  width: 56px;
+}
+
+.deviceHeading {
+  font-family: Montserrat-Bold;
+  font-size: 32px;
+  color: #000000;
+  letter-spacing: 5.12px;
+  text-transform: uppercase;
+  text-shadow: 0 20px 25px rgba(0, 0, 0, 0.15);
+}
+
+/*Icon With text code ends*/

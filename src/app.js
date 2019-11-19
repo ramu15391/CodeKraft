@@ -15,7 +15,7 @@ function App() {
           })}
         </section>
         <section className="deviceContainer">
-          <HeaderWithIcon {...IconWithText} />
+          <HeaderWithIcon IconWithText={IconWithText} />
           <DeviceSettingsCard DeviceSettings={DeviceSettings} />
         </section>
       </main>
