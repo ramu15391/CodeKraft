@@ -22,7 +22,7 @@ h2 {
 .deviceCardWrapper {
   display: flex;
   position: relative;
-  margin: 50px 40px;
+  margin: 5%;
   height: 130px;
   width: 303px;
   flex-direction: row-reverse;
@@ -60,6 +60,17 @@ h2 {
     rgba(116, 188, 247, 0) 100%
   );
   flex-wrap: wrap;
+  max-height: 100vh;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+section.sidePanel::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+  display: none;
+}
+.selectDeviceCard {
+  flex-direction: row;
 }
 
 /*Icon With text code*/

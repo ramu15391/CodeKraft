@@ -2,7 +2,7 @@ import React from "react";
 import { DeviceCard } from "./components/DeviceCard/deviceCard";
 import { HeaderWithIcon } from "./components/HeaderWithIcon/HeaderWithIcon";
 import { DeviceSettingsCard } from "./components/DeviceSettingsCard/DeviceSettingsCard";
-import { DeviceInfo, IconWithText, DeviceSettings } from "./fixtures";
+import { DeviceInfo, IconWithText } from "./fixtures";
 
 function App() {
   return (
@@ -16,11 +16,9 @@ function App() {
         </section>
         <section className="deviceContainer">
           <HeaderWithIcon IconWithText={IconWithText} />
-          <DeviceSettingsCard DeviceSettings={DeviceSettings} />
+          <DeviceSettingsCard />
         </section>
       </main>
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
     </div>
   );
 }

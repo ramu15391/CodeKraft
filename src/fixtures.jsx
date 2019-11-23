@@ -1,5 +1,4 @@
 import { React } from "react";
-import { SelectDeviceShade } from "./components/SelectDeviceShade/SelectDeviceShade";
 
 const DeviceInfo = [
   {
@@ -42,22 +41,4 @@ const IconWithText = [
   }
 ];
 
-const DeviceSettings = [
-  {
-    label: "Shades",
-    divider: "sideLine",
-    renderChildren: "SelectDeviceShade"
-  },
-  {
-    label: "Mode",
-    divider: "sideLine",
-    renderChildren: ""
-  },
-  {
-    label: "Intensity",
-    divider: "sideLine",
-    renderChildren: ""
-  }
-];
-
-export { IconWithText, DeviceSettings, DeviceInfo };
+export { IconWithText, DeviceInfo };
