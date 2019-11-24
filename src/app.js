@@ -2,7 +2,6 @@ import React from "react";
 import { DeviceCard } from "./components/DeviceCard/deviceCard";
 import { HeaderWithIcon } from "./components/HeaderWithIcon/HeaderWithIcon";
 import { DeviceSettingsCard } from "./components/DeviceSettingsCard/DeviceSettingsCard";
-import { DeviceInfo, IconWithText } from "./fixtures";
 
 function App() {
   return (
@@ -10,12 +9,10 @@ function App() {
       <main className="container">
         <section className="sidePanel">
           <img src="logo.png" />
-          {DeviceInfo.map((device, i, arr) => {
-            return <DeviceCard key={i} device={device} />;
-          })}
+          <DeviceCard />;
         </section>
         <section className="deviceContainer">
-          <HeaderWithIcon IconWithText={IconWithText} />
+          <HeaderWithIcon />
           <DeviceSettingsCard />
         </section>
       </main>

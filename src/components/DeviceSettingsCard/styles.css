@@ -8,6 +8,13 @@
   justify-content: space-between;
   margin: 2rem 0;
 }
+.settingName{
+  font-family: Montserrat-Bold;
+font-size: 15px;
+color: #AC6CFF;
+letter-spacing: 1.5px;
+text-transform: uppercase;
+}
 .deviceSettingSection {
   display: flex;
   flex-direction: column;
@@ -20,4 +27,11 @@
   display: flex;
   align-self: center;
   margin: 0 1rem;
+}
+
+.row{
+  flex-direction: row;
+}
+.column{
+  flex-direction: column;
 }

@@ -3,17 +3,19 @@ const DeviceSettings = [
     label: "Shades",
     divider: "sideLine",
     renderChildren: "CheckBox/CheckBox",
-    childrenStyle: "#8245E6"
+    direction: "row",
   },
   {
     label: "Mode",
     divider: "sideLine",
-    renderChildren: "DeviceMode/DeviceMode"
+    renderChildren: "DeviceMode/DeviceMode",
+    direction: "column"
   },
   {
     label: "Intensity",
     divider: "sideLine",
-    renderChildren: ""
+    renderChildren: "",
+    direction: "row"
   }
 ];
 

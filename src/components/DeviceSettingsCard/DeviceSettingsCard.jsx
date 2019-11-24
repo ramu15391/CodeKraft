@@ -5,7 +5,6 @@ import "./styles.css";
 
 const DeviceSettingsCard = props => {
   console.log("device settings", props);
-  //const { DeviceSettings } = props;
 
   const LoadableComponent = loadable(props =>
     import(`../../../src/components/${props.child}`)
@@ -13,14 +12,13 @@ const DeviceSettingsCard = props => {
 
   return DeviceSettings.map((ele, i, arr) => {
     const RenderChild = typeof ele.renderChildren ? ele.renderChildren : "";
-    console.log("renderchildrenxd", ele.renderChildren);
     return (
-      <section className="deviceSettingSection">
+      <section index={i} className="deviceSettingSection">
         <div className="deviceSettingName">
           <span className="settingName">{ele.label}</span>
           <span className="sideLine" />
         </div>
-        <div className="deviceSettings">
+        <div className={`deviceSettings ${ele.direction}`}>
           {RenderChild ? <LoadableComponent child={ele.renderChildren} /> : ""}
         </div>
       </section>

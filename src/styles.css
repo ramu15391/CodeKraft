@@ -81,20 +81,6 @@ section.sidePanel::-webkit-scrollbar {
   flex-basis: 100%;
   justify-content: space-between;
 }
-.toggleWrap {
-  background: #000000;
-  box-shadow: 0 12px 12px 0 rgba(0, 0, 0, 0.15);
-  border-radius: 60px;
-  height: 24px;
-  width: 42px;
-}
-.toggleIcon {
-  background: #ffffff;
-  box-shadow: 0 12px 18px 0 rgba(0, 0, 0, 0.1);
-  border-radius: 60px;
-  height: 14px;
-  width: 14px;
-}
 .addDeviceIcon {
 }
 .addDeviceIconWrap {

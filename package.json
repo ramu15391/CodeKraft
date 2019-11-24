@@ -7,6 +7,9 @@
   "dependencies": {
     "@loadable/component": "5.10.3",
     "@loadable/webpack-plugin": "5.7.1",
+    "mobx": "^5.15.0",
+    "mobx-react": "^6.1.4",
+    "node-sass": "^4.13.0",
     "react": "16.8.6",
     "react-dom": "16.8.6",
     "react-scripts": "3.0.1",
