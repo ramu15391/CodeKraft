@@ -11,6 +11,8 @@
     "mobx-react": "^6.1.4",
     "node-sass": "^4.13.0",
     "react": "16.8.6",
+    "react-circle-slider": "^1.6.2",
+    "react-d3-speedometer": "^0.7.3",
     "react-dom": "16.8.6",
     "react-scripts": "3.0.1",
     "sass": "1.23.6"

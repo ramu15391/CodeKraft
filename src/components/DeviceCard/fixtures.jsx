@@ -1,6 +1,11 @@
 
 const DeviceInfo = [
     {
+      deviceName: "Thermostat",
+      deviceLocation: "In Bedroom",
+      deviceImage: "/thermostat.png"
+    },
+    {
       deviceName: "Bed lamp",
       deviceLocation: "In Bedroom",
       deviceImage: "/lamp.png"

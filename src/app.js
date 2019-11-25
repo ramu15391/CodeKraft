@@ -8,8 +8,7 @@ function App() {
     <div className="App">
       <main className="container">
         <section className="sidePanel">
-          <img src="logo.png" />
-          <DeviceCard />;
+          <DeviceCard />
         </section>
         <section className="deviceContainer">
           <HeaderWithIcon />

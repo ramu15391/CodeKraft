@@ -14,7 +14,7 @@ const DeviceSettings = [
   {
     label: "Intensity",
     divider: "sideLine",
-    renderChildren: "",
+    renderChildren: "Counter/Counter",
     direction: "row"
   }
 ];

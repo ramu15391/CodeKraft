@@ -2,9 +2,9 @@ import React from "react";
 import "./styles.scss";
 
 const deviceMode = [
-  { icon: "/morning-wh.png", mode: "Morning", percentage: "50%"},
-  { icon: "/day-dk.png", mode: "Afternoon", percentage: "30%"},
-  { icon: "/night-dk.png", mode: "Day", percentage: "100%"}
+  { icon: "/morning-wh.png", mode: "Morning", percentage: "50%", bg:'#000'},
+  { icon: "/day-dk.png", mode: "Afternoon", percentage: "30%",bg:'none'},
+  { icon: "/night-dk.png", mode: "Day", percentage: "100%",bg:'unset'}
 ];
 
 const imgPath = process.env.PUBLIC_URL;
@@ -19,8 +19,8 @@ const DeviceMode = props => {
         className={mode==i ? "deviceModeWrap active" : "deviceModeWrap"}
         style={{ background: ele.background }}
       >
-        <div className="deviceModeLeftWrap" style={{ background: ele.background }}>
-          <img src={imgPath +'/img'+ ele.icon} alt="shade icon" className="deviceModeIcon"/>
+        <div className="deviceModeLeftWrap">
+          <img src={imgPath +'/img'+ ele.icon} style={{ background: ele.bg }} alt="shade icon" className="deviceModeIcon"/>
           <span className="deviceModeText">{ele.mode}</span>
         </div>
         <div className="deviceModeRightWrap" style={{ background: ele.background }}>

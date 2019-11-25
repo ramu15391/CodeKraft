@@ -6,24 +6,21 @@
     align-items: center;
 
     &.active{
-        background-image: linear-gradient(-135deg, #AD6BFF 0%, #74BCF7 100%);
+        background-image: linear-gradient(-135deg, #AD6BFF 100%, #74BCF7 100%);
         box-shadow: 0 20px 20px 0; 
     }
     .deviceModeLeftWrap, .deviceModeRightWrap{
         display: flex;
         flex-basis: 50%;
-        .deviceModeText{
+        .deviceModeText, .deviceModeIcon, .deviceModeLevel{
             margin: 0.5rem;
-        }
-        .deviceModeIcon{
-            margin: 0.5rem;
-        }
-        .deviceModeLevel{
-            margin: 0.5rem;
+            align-self: center;
         }
         .tickIcon{
             width:1.5rem;
             height:1.5rem;
+            align-self: center;
+            margin-right: 1rem;
         }
     }
     .deviceModeRightWrap{

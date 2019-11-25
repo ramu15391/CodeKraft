@@ -22,5 +22,16 @@
     align-self: center;
     justify-content: center;
   }
+  
 }
 
+@media (max-width: 480px) {
+  .selectShadeWrap.active{
+    height:42px;
+    width: 42px;
+  }
+}
+
+@media (max-width: 768px) {
+    
+}

@@ -1,5 +1,6 @@
 import React from "react";
 import loadable from "@loadable/component";
+
 import { DeviceSettings } from "./fixtures";
 import "./styles.css";
 
