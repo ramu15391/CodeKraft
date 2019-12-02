@@ -1,4 +1,4 @@
-import React,{useEffect, useState} from "react";
+import React,{useState} from "react";
 import {IconWithText} from './fixtures.jsx'
 import "./styles.scss";
 const imgPath = process.env.PUBLIC_URL + '/img';
@@ -12,9 +12,6 @@ const HeaderWithIcon = props => {
       handleToggle(!toggle)
     }
   }
-  React.useEffect(()=>{
-
-  },[toggle])
 
   return IconWithText.map((ele, i, arr) => {
     console.log(ele);

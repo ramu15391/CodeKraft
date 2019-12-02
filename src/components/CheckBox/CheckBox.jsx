@@ -17,11 +17,6 @@ const CheckBox = props => {
     setDeviceShade(i)
     console.log("selectShade", selectShade);
   }
-
-  React.useEffect(() => {
-
-  },[selectShade])
-
   const deviceShadeEl = deviceShade.map((ele, i, arr) => {
     return (
       <div index={i} className={selectShade == i ? "selectShadeWrap active" :"selectShadeWrap" } onClick={() => onShadeClick(i)} style={{ background: ele.background }}>

@@ -34,8 +34,6 @@ const DeviceMode = props => {
   const onSelectDeviceMode = (i) =>{
     setDeviceMode(i);
   }
-  React.useEffect(()=>{
-  },[mode])
 
   const deviceModeEl = deviceMode.map((ele, i, arr) => {
     return getDeviceModeCard(ele,i);

@@ -9,7 +9,8 @@
 .deviceCardWrapper {
   display: flex;
   position: relative;
-  margin: 50px 40px;
+  //margin: 50px 40px;
+  margin: 0 0 30px 0;
   height: 130px;
   width: 303px;
   flex-direction: row-reverse;
@@ -17,7 +18,7 @@
 
   &.active {
     .deviceImgContainer {
-      right: 0;
+      right: -20px;
       left: auto;
     }
     .deviceTextContainer {
@@ -69,14 +70,17 @@
  }
 
 @media (max-width: 768px) {
-  section.deviceCardWrapper{
+  .container{
+    section.deviceCardWrapper{
       height: 152px;
       width: 130px;
 
       .deviceTextContainer,.deviceImgContainer {
         width: 120px;
         height: 120px;
+        right: -70px;
       }
+    }
   }
   
 }
@@ -90,6 +94,7 @@
         .deviceTextContainer,.deviceImgContainer {
           width: 100px;
           height: 100px;
+          right: -20px;
           
           .deviceNameText, .deviceLocationText{
             font-size: 10px;

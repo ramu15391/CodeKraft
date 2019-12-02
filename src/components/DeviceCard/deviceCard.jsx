@@ -9,10 +9,6 @@ const DeviceCard = (props) => {
     setDeviceCardIdx(i);
   }
 
-  React.useEffect(()=>{
-
-  },[deviceCardIdx])
-
   return DeviceInfo.map((device, i, arr) => {
     console.log("index", i,deviceCardIdx);
       return (
