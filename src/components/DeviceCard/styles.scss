@@ -18,13 +18,19 @@
 
   &.active {
     .deviceImgContainer {
-      right: -20px;
+      right: -30px;
       left: auto;
+      top: -30px;
     }
     .deviceTextContainer {
       width: 100%;
       align-items: center;
       margin-right: 5rem;
+    }
+
+    .deviceTextContainer {
+      width: 233px;
+      height: 140px;
     }
   }
 
