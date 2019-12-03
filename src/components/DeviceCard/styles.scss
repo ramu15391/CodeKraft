@@ -57,6 +57,10 @@
         color: #000000;
         letter-spacing: 0.47px;
         line-height: 19px;
+
+        @media(max-width: 1024px) {
+          display: none;
+        }
       }
     }
 
@@ -84,7 +88,8 @@
       .deviceTextContainer,.deviceImgContainer {
         width: 120px;
         height: 120px;
-        right: -70px;
+        right: -40px;
+        top: 0;
       }
     }
   }
@@ -101,6 +106,7 @@
           width: 100px;
           height: 100px;
           right: -20px;
+          top: 0;
           
           .deviceNameText, .deviceLocationText{
             font-size: 10px;

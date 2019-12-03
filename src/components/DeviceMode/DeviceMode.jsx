@@ -10,7 +10,7 @@ const deviceMode = [
 const imgPath = process.env.PUBLIC_URL;
 
 const DeviceMode = props => {
-  const [mode, setDeviceMode] = React.useState();
+  const [mode, setDeviceMode] = React.useState(0);
   const getDeviceModeCard = (ele, i) => {
     return (   
       <section

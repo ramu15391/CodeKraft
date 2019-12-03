@@ -3,7 +3,7 @@ import "./styles.scss";
 import { DeviceInfo } from './fixtures';
 
 const DeviceCard = (props) => { 
-  const [deviceCardIdx, setDeviceCardIdx] = React.useState();
+  const [deviceCardIdx, setDeviceCardIdx] = React.useState(0);
 
   const SelectDeviceCard = (i) =>{
     setDeviceCardIdx(i);

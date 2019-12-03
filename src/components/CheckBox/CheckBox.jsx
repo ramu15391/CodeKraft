@@ -10,7 +10,7 @@ const deviceShade = [
 ];
 
 const CheckBox = props => {
-  const [ selectShade, setDeviceShade] = React.useState();
+  const [ selectShade, setDeviceShade] = React.useState(0);
   console.log("shade", props);
 
   const onShadeClick = (i) => {
