@@ -1,35 +1,26 @@
 import React from 'react';
-import ReactDOM from "react-dom";
 import { CircleSlider } from "react-circle-slider";
+import Roundy from "roundy";
 import "./styles.scss";
- 
-class Counter extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = { value: 0 };
-    }
- 
-    handleChange = value => {
-        console.log(`Changed value ${value}`);
-        this.setState({ value });
-    };
- 
-    handleChangeRange = event => {
-        this.setState({
-            value: event.target.valueAsNumber,
-        });
-    };
- 
-    render() {
-        const { value } = this.state;
-        return (
-            <div className="counterWrap">
-                <CircleSlider showPercentage={true} knobRadius={8} progressWidth={8} circleWidth={5} min={0} max={100} showTooltip={true} value={value} onChange={this.handleChange} />
-            </div>
-        );
-    }
-}
- 
 
+function Counter() {
+  const [value, setValue] = React.useState(0);
+  return (
+    <div className="CounterApp">
+      <Roundy
+        value={value}
+        radius={100}
+        color="linear-gradient(-135deg, #AD6BFF 0%, #74BCF7 100%);"
+        arcSize={180}
+        strokeWidth={3}
+        onChange={value => {
+          console.log(value);
+          setValue(value);
+        }}
+      />
+      <div className="sliderLimit">{value}</div>
+    </div>
+  );
+}
 export { Counter }
 export default Counter;
